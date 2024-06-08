@@ -1,4 +1,4 @@
-<h1 align="center"> Links Moisés Barsoti </h1>
+<h1 align="center"> Links do Moisés Barsoti </h1>
 
 ![image](https://github.com/moisesBarsoti/MeusLinks/assets/146322015/1b1ae2e0-7ab1-4e9f-9eec-98d34dae5710)
 
@@ -20,4 +20,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-<p>Link do projeto: <a href="https://moisesbarsoti.github.io/MeusLinks/">Clique aqui</a> <p>
+<p>Link do projeto: <a href="https://moisesbarsoti.github.io/MeusLinks/">Clique aqui</a><p>
