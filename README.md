@@ -23,4 +23,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-- [Acesse o projeto finalizado, online](https://moisesbarsoti.github.io/MeusLinks/)
+<h2>Link do projeto: <a href="https://moisesbarsoti.github.io/MeusLinks/">Clique aqui</a> </h2>
