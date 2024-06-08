@@ -29,7 +29,7 @@
   --cor-criador: #f00;
   --box-shadow: #000;
   --transparente: rgba(0, 0, 0, 0.2);
-  --switch-bg-url: #fff url(../img/sun.svg) no-repeat center/cover;
+  --switch-bg-url: #000 url(../img/sun.svg) no-repeat center/cover;
 }
 
 body {
