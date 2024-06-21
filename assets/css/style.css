@@ -35,6 +35,10 @@
 body {
   background: var(--bg-url) no-repeat top center/cover;
   color: var(--branco);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 div#container {
