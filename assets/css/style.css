@@ -55,8 +55,8 @@ div#container {
 }
 
 #perfil img {
-  width: 100px;
-  height: 100px;
+  width: 135px;
+  height: 140px;
   border-radius: 50%;
   box-shadow: 0 0 10px var(--box-shadow);
 }
@@ -116,6 +116,7 @@ ul {
   text-align: center;
   padding: 24px 0;
 }
+
 ul a {
   padding: 16px 24px;
   border: solid 1px var(--border);
@@ -126,6 +127,7 @@ ul a {
   -webkit-backdrop-filter: blur(4px);
   font-weight: bold;
 }
+
 ul a:hover {
   background: var(--transparente-hover);
   border: solid 1.5px var(--border);
@@ -158,4 +160,15 @@ footer {
 
 footer span#criador {
   color: var(--cor-criador);
+}
+
+/* Responsividade */
+
+@media(width < 40rem) {
+  #perfil img {
+    width: 125px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--box-shadow);
+  }
 }
