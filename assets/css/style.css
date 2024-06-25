@@ -166,7 +166,7 @@ footer span#criador {
 
 @media(width < 40rem) {
   #perfil img {
-    width: 125px;
+    width: 138px;
     height: 140px;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--box-shadow);
