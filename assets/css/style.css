@@ -161,14 +161,3 @@ footer {
 footer span#criador {
   color: var(--cor-criador);
 }
-
-/* Responsividade */
-
-@media(width < 40rem) {
-  #perfil img {
-    width: 138px;
-    height: 140px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px var(--box-shadow);
-  }
-}
