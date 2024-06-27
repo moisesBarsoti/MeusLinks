@@ -57,7 +57,7 @@ div#container {
 #perfil img {
   width: 135px;
   height: 140px;
-  border-radius: 50%;
+  border-radius: 30px;
   box-shadow: 0 0 10px var(--box-shadow);
 }
 
