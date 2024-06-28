@@ -24,7 +24,7 @@
 
 .light {
   --branco: #000;
-  --bg-url: url("../img/bg-mobile-light.jpg");
+  --bg-url: #fff;
   --border: #000;
   --cor-criador: #f00;
   --box-shadow: #000;
@@ -55,9 +55,9 @@ div#container {
 }
 
 #perfil img {
-  width: 135px;
-  height: 140px;
-  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   box-shadow: 0 0 10px var(--box-shadow);
 }
 
@@ -160,4 +160,127 @@ footer {
 
 footer span#criador {
   color: var(--cor-criador);
+}
+
+@media (width < 40rem) {
+  div#container {
+    width: 360px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+  }
+  
+  /* perfil */
+  
+  #perfil {
+    text-align: center;
+    padding: 24px;
+  }
+  
+  #perfil img {
+    width: 135px;
+    height: 140px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px var(--box-shadow);
+  }
+  
+  #perfil p {
+    font-weight: 500;
+    margin-top: 20px;
+    transition: none;
+  }
+  
+   /* Switch  */
+  
+  #switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+    cursor: pointer;
+  }
+  
+  #switch button {
+    width: 32px;
+    height: 32px;
+    background: var(--branco);
+    border: 0;
+    border-radius: 50%;
+    background: var(--switch-bg-url);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .light #switch button {
+    right: 0;
+    left: initial;
+  }
+  
+  #switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--transparente);
+    border: solid 1px var(--border);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+  }
+  
+   /* Ul (Links)   */
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 24px 0;
+  }
+  
+  ul a {
+    padding: 16px 24px;
+    border: solid 1px var(--border);
+    border-radius: 8px;
+    color: var(--branco);
+    background: var(--transparente);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-weight: bold;
+  }
+  
+  ul a:hover {
+    background: var(--transparente-hover);
+    border: solid 1.5px var(--border);
+  }
+  
+   /* Imagens das redes sociais   */
+  
+  #links-sociais {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 16px;
+    gap: 32px;
+  }
+  #links-sociais i {
+    font-size: 2rem;
+    color: var(--branco);
+    cursor: pointer;
+  }
+  #links-sociais i:hover {
+    transform: scale(2);
+  }
+  
+   /* footer   */
+  
+  footer {
+    text-align: center;
+    padding: 24px 0;
+    font-size: 14px;
+  }
+  
+  footer span#criador {
+    color: var(--cor-criador);
+  }
 }
