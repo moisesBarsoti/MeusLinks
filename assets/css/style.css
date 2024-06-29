@@ -16,29 +16,48 @@
   --border: #fff;
   --transparente: rgba(255, 255, 255, 0.1);
   --transparente-hover: rgba(255, 255, 255, 0.5);
-  --cor-criador: #0fe;
   --box-shadow: #fff;
-  --bg-url: #080808;
-  --switch-bg-url: #fff ;
+  --bg-url: #03011b;
+  --switch-bg-url: #fff;
+  --cor-criador: linear-gradient(
+    90deg,
+    rgb(179, 16, 255) 20%, 
+    rgb(0, 255, 255) 
+    );;
+  --linear-gradient: linear-gradient(
+    90deg,
+    rgb(159, 0, 233), 
+    rgba(0, 255, 255, 0.856) 100%
+    );
+  --linear-gradient-hover: linear-gradient(
+    90deg,
+    rgb(146, 4, 212), 
+    rgba(0, 255, 255, 0.589) 100%
+    );
 }
 
 .light {
   --branco: #000;
-  --bg-url: #fff;
+  --bg-url: #f9ecfc;
   --border: #000;
-  --cor-criador: #f00;
+  --cor-criador: linear-gradient(
+    90deg,
+    rgb(179, 16, 255) 20%, 
+    rgb(0, 255, 255) 
+    );;
   --box-shadow: #000;
-  --transparente: rgba(0, 0, 0, 0.2);
-  --switch-bg-url: #000 ;
+  --transparente: rgb(209, 197, 209);
+  --switch-bg-url: #000;
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
+  background: var(--bg-url);
   color: var(--branco);
   display: flex;
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  overflow-y: hidden;
 }
 
 div#container {
@@ -128,6 +147,15 @@ ul a {
   font-weight: bold;
 }
 
+ul a#portifolio {
+  background: var(--linear-gradient);
+  transition: all 5s ease-in-out;
+}
+
+ul a#portifolio:hover {
+  background: var(--linear-gradient-hover);
+}
+
 ul a:hover {
   background: var(--transparente-hover);
   border: solid 1.5px var(--border);
@@ -150,7 +178,7 @@ ul a:hover {
   transform: scale(2);
 }
 
- /* footer   */
+ /* footer */
 
 footer {
   text-align: center;
@@ -159,8 +187,13 @@ footer {
 }
 
 footer span#criador {
-  color: var(--cor-criador);
+  background-image: var(--cor-criador);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
+/* Responsividade */
 
 @media (width < 40rem) {
   div#container {
@@ -171,116 +204,11 @@ footer span#criador {
   
   /* perfil */
   
-  #perfil {
-    text-align: center;
-    padding: 24px;
-  }
-  
   #perfil img {
     width: 135px;
     height: 140px;
-    border-radius: 30px;
+    border-radius: 100%;
     box-shadow: 0 0 10px var(--box-shadow);
   }
-  
-  #perfil p {
-    font-weight: 500;
-    margin-top: 20px;
-    transition: none;
-  }
-  
-   /* Switch  */
-  
-  #switch {
-    position: relative;
-    width: 64px;
-    margin: 4px auto;
-    cursor: pointer;
-  }
-  
-  #switch button {
-    width: 32px;
-    height: 32px;
-    background: var(--branco);
-    border: 0;
-    border-radius: 50%;
-    background: var(--switch-bg-url);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: 1;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  .light #switch button {
-    right: 0;
-    left: initial;
-  }
-  
-  #switch span {
-    display: block;
-    width: 64px;
-    height: 24px;
-    background: var(--transparente);
-    border: solid 1px var(--border);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 9999px;
-  }
-  
-   /* Ul (Links)   */
-  
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
-    padding: 24px 0;
-  }
-  
-  ul a {
-    padding: 16px 24px;
-    border: solid 1px var(--border);
-    border-radius: 8px;
-    color: var(--branco);
-    background: var(--transparente);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    font-weight: bold;
-  }
-  
-  ul a:hover {
-    background: var(--transparente-hover);
-    border: solid 1.5px var(--border);
-  }
-  
-   /* Imagens das redes sociais   */
-  
-  #links-sociais {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 16px;
-    gap: 32px;
-  }
-  #links-sociais i {
-    font-size: 2rem;
-    color: var(--branco);
-    cursor: pointer;
-  }
-  #links-sociais i:hover {
-    transform: scale(2);
-  }
-  
-   /* footer   */
-  
-  footer {
-    text-align: center;
-    padding: 24px 0;
-    font-size: 14px;
-  }
-  
-  footer span#criador {
-    color: var(--cor-criador);
-  }
+
 }
