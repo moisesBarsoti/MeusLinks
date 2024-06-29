@@ -1,10 +1,6 @@
 <h1 align="center"> Links do Moisés Barsoti </h1>
 
-![image](https://github.com/moisesBarsoti/MeusLinks/assets/146322015/b00e2e3e-bb2f-4c7c-ac26-213263397221)
-
-
-
-
+![image](https://github.com/moisesBarsoti/MeusLinks/assets/146322015/31f75f5f-4696-4f8d-bb6f-56040f060c3b)
 
 
 <p align="center">
