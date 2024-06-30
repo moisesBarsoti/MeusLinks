@@ -193,6 +193,46 @@ footer span#criador {
   color: transparent;
 }
 
+/* Animações */
+
+@keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+}
+
+#perfil,
+#switch,
+ul,
+#links-sociais,
+footer {
+  animation: aparecer 1s backwards;
+}
+
+#perfil {
+  animation-delay: .4s;
+}
+
+#switch {
+  animation-delay: .8s;
+}
+
+ul {
+  animation-delay: 1.2s;
+}
+
+#links-sociais {
+  animation-delay: 1.6s;
+}
+
+footer {
+  animation-delay: 1.8s;
+}
+
 /* Responsividade */
 
 @media (width < 40rem) {
